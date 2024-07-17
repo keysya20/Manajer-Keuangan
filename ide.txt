@@ -1,0 +1,26 @@
+nitip kalau mau pake filter bulan di laporan keuangan
+
+# List tanggal dengan format yyyy-mm-dd
+list_tanggal = [
+    '2024-01-15', '2024-02-28', '2024-03-10', '2024-04-22',
+    '2024-05-05', '2024-06-18', '2024-07-30', '2024-08-12',
+    '2024-09-25', '2024-10-17', '2024-11-09', '2024-12-31'
+]
+
+# Input bulan dari pengguna (misal: 01 untuk Januari)
+bulan_input = input("Masukkan bulan (01-12): ")
+
+# Validasi input bulan
+if not bulan_input.isdigit() or int(bulan_input) < 1 or int(bulan_input) > 12:
+    print("Masukkan bulan dalam format numerik antara 01 hingga 12.")
+else:
+    # Filter elemen-elemen dengan bulan yang sesuai dengan input pengguna
+    hasil_filter = [tanggal for tanggal in list_tanggal if tanggal[5:7] == bulan_input]
+
+    # Cetak hasil filter
+    if hasil_filter:
+        print(f"Elemen list dengan bulan {bulan_input}:")
+        for tanggal in hasil_filter:
+            print(tanggal)
+    else:
+        print(f"Tidak ada tanggal yang ditemukan untuk bulan {bulan_input}.")

@@ -1,0 +1,21 @@
+buat alur program laporan keuangan
+
+
+alur program laporan keuangan
+1. input 2 di main program
+2. panggil fungsi tabel data di kelas laporan keuangan
+
+jadi, tabel nanti dibagi 2 atau kolom tabel ada nomor, kategori pengeluaran, jumlah, kategori pemasukan, jumlah.
+setelah menampilkan tabel, akan ada keterangan
+'Total pengeluaran bulan ini: Rp... atau ...%'
+'Total pemasukan bulan ini: Rp... atau ...%'
+
+so, untuk hitung jumlah pengeluaran dan pemasukan ataupun total pengeluaran dan pemasukan. aku kepikiran buat bikin misah database baru
+
+1. jadi nanti kita akan membaca database data_keuangan
+2. looping untuk akses data dan masukin ke list
+
+
+
+nama tabungan
+target
